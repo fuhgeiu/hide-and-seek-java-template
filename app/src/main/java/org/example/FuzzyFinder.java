@@ -29,7 +29,6 @@ public class FuzzyFinder {
             int mid = (low + high) / 2;
             Fuzzy midFuzzy = ListToBeSorted.get(mid);
 
-
             int comparison = midFuzzy.color.compareToIgnoreCase("gold");
 
             if (comparison == 0) {return mid;}
@@ -38,11 +37,6 @@ public class FuzzyFinder {
         }
 
         return -1;
-
-
-
     }
-
-
 
 }
